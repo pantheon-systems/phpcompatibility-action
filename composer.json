@@ -1,0 +1,17 @@
+{
+    "name": "pantheon-systems/phpcompatibility",
+    "description": "PHP Compatibility for Github Actions",
+    "type": "project",
+    "require": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

@@ -1,0 +1,23 @@
+name: 'PHP Compatibility'
+description: 'Runs PhpCompatibility/PhpCompatibility on the given source code'
+inputs:
+  test-versions:
+    description: 'Versions to test as specified by phpcompatibility composer package'
+    required: true
+    default: '8.0-'
+  paths:
+    description: 'Paths to test'
+    required: true
+    default: ${{ github.workspace }}
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup PHP with PECL extension
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+    - run: ./entrypoint.sh
+      shell: bash
+      env:
+        TEST_VERSIONS: ${{ inputs.test-versions }}
+        PATHS: ${{ inputs.paths }}
