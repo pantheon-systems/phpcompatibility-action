@@ -16,9 +16,8 @@ runs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.2'
-    - run: entrypoint.sh
+    - run: $GITHUB_ACTION_PATH/entrypoint.sh
       shell: bash
       env:
         TEST_VERSIONS: ${{ inputs.test-versions }}
         PATHS: ${{ inputs.paths }}
-        GITHUB_PATH: ${{ github.action_path }}
