@@ -1,0 +1,13 @@
+name: Test Github Action
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test Github Action
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./action
+        with:
+          paths: ${{ github.workspace }}/sample-content
