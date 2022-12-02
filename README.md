@@ -20,7 +20,7 @@ Paths to run compatibility check on. Default: ${{ github.workspace }}
 ## Example Usage
 
 ```
-uses: kporras07/phpcompatibility-action@v1
+uses: pantheon-systems/phpcompatibility-action@v1
 with:
   test-versions: 7.4-
   paths: ${{ github.workspace }}/src
