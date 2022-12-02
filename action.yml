@@ -16,7 +16,7 @@ runs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.2'
-    - run: ./entrypoint.sh
+    - run: entrypoint.sh
       shell: bash
       env:
         TEST_VERSIONS: ${{ inputs.test-versions }}
