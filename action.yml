@@ -1,5 +1,8 @@
 name: 'PHP Compatibility'
 description: 'Runs PhpCompatibility/PhpCompatibility on the given source code'
+branding:
+  icon: check-circle
+  color: yellow
 inputs:
   test-versions:
     description: 'Versions to test as specified by phpcompatibility composer package'
