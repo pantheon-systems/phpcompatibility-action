@@ -17,7 +17,7 @@ runs:
   using: 'composite'
   steps:
     - name: Setup PHP with PECL extension
-      if: ${{ inputs.skip-php-setup !== 'false' }}
+      if: ${{ inputs.skip-php-setup != 'false' }}
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.2'
