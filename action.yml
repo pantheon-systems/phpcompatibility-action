@@ -21,3 +21,4 @@ runs:
       env:
         TEST_VERSIONS: ${{ inputs.test-versions }}
         PATHS: ${{ inputs.paths }}
+        GITHUB_PATH: ${{ github.action_path }}
