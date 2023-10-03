@@ -22,7 +22,7 @@ Select the test versions to run PHPCompatibility. It supports any format accepte
 
 ### paths
 
-Paths to run compatibility check on. Default: ${{ github.workspace }}
+Paths to run compatibility check on. Default: `${{ github.workspace }}`
 
 ## Example Usage
 
