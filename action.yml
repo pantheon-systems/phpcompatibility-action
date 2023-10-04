@@ -23,7 +23,7 @@ runs:
       if: ${{ inputs.skip-php-setup == 'false' }}
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.2'
+        php-version: '8.3'
     - run: $GITHUB_ACTION_PATH/entrypoint.sh
       shell: bash
       env:
