@@ -32,3 +32,8 @@ with:
   test-versions: 7.4-
   paths: ${{ github.workspace }}/src
 ```
+
+## Development
+
+### Autotag
+This project uses our [autotag action](https://github.com/pantheon-systems/action-autotag). New releases are created on each merge to `main`. See the [autotag readme](https://github.com/pantheon-systems/autotag?tab=readme-ov-file#usage) for details.
