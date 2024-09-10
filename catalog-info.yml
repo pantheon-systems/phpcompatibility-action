@@ -1,0 +1,12 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: phpcompatibility-action
+  description: Auto-generated catalog info for pantheon-systems/phpcompatibility-action
+  annotations:
+    backstage.io/techdocs-ref: dir:docs/
+spec:
+  type: tool
+  lifecycle: mature
+  owner: site
