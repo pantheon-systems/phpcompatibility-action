@@ -24,6 +24,10 @@ Select the test versions to run PHPCompatibility. It supports any format accepte
 
 Paths to run compatibility check on. Default: `${{ github.workspace }}`
 
+### extensions
+
+Specify the extensions of the files that will be checked. Example: `extensions: php,inc,lib`. By default, it uses the options set by PHPCompatibility and PHP_CodeSniffer.
+
 ## Example Usage
 
 ```
@@ -31,6 +35,7 @@ uses: pantheon-systems/phpcompatibility-action@v1
 with:
   test-versions: 7.4-
   paths: ${{ github.workspace }}/src
+  extensions: php
 ```
 
 ## Development

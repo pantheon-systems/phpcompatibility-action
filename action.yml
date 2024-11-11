@@ -16,6 +16,10 @@ inputs:
     description: 'Skip PHP Setup (useful if it was setup in another step)'
     required: false
     default: 'false'
+  extensions:
+    descriptions: 'Files only with this extension(s) will be tested'
+    required: false,
+    default: ''
 runs:
   using: 'composite'
   steps:
@@ -29,3 +33,4 @@ runs:
       env:
         TEST_VERSIONS: ${{ inputs.test-versions }}
         PATHS: ${{ inputs.paths }}
+        EXTENSIONS: ${{ inputs.extensions }}
