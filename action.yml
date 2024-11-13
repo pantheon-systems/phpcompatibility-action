@@ -19,7 +19,7 @@ inputs:
   extensions:
     descriptions: 'Files only with this extension(s) will be tested'
     required: false,
-    default: ''
+    default: 'php'
 runs:
   using: 'composite'
   steps:

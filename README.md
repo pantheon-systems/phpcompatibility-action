@@ -35,7 +35,7 @@ uses: pantheon-systems/phpcompatibility-action@v1
 with:
   test-versions: 7.4-
   paths: ${{ github.workspace }}/src
-  extensions: php
+  extensions: 'php,inc'
 ```
 
 ## Development
