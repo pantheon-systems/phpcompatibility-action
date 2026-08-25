@@ -11,7 +11,7 @@ jobs:
   tag-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
-      - uses: pantheon-systems/action-autotag@638975f12971bbf94011847f13ded24d2dc092b8 # v0.1.13
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: pantheon-systems/action-autotag@2c38d4e46499ae4c6c3bb11562ec264839ce6105 # v1.2.0
         with:
           gh-token: ${{ github.token }}
